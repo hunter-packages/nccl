@@ -9,12 +9,7 @@
 
 #include <cuda_runtime.h>
 
-#if CUDART_VERSION >= 7050
-#include <cuda_fp16.h>
-#define CUDA_HAS_HALF 1
-#else
 #undef CUDA_HAS_HALF
-#endif
 
 #define NCCL_EXPORTED
 
